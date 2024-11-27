@@ -64,46 +64,60 @@
 }
 /* Style des boutons de contrôle */
 .carousel-controls button {
-  padding: 10px;
-  /* Ajout de padding pour un meilleur contrôle */
-  background-color: aquamarine;
-  /* Arrière-plan en aquamarine */
+  padding: 10px 20px;
+  background-color: white; /* Fond blanc */
+  border: 2px solid #32cd32; /* Bordure verte */
+  border-radius: 15px; /* Coins arrondis */
+  color: #000000; /* Texte vert */
+  font-size: 16px; /* Taille du texte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Animation douce */
 }
-/* Définition des points de contrôle */
+
+.carousel-controls button:hover {
+  transform: scale(1.1); /* Zoom léger au survol */
+  background-color: #f0f0f0; /* Fond gris clair au survol */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Accentuation de l'ombre */
+}
+
+.carousel-controls button:active {
+  transform: scale(0.95); /* Réduction légère à l'appui */
+  background-color: #e0e0e0; /* Fond plus foncé à l'appui */
+}
+
+/* Style des points de contrôle */
 .carousel-dots {
   position: absolute;
-  /* Les points sont absolument positionnés */
   z-index: 5;
-  /* Ils sont placés au-dessus des autres éléments */
-  left: 50%;
-  /* La distance à gauche est de 50% */
-  right: 50%;
-  /* La distance à droite est de 50% */
-  bottom: 10%;
-  /*La distance du bas est de 10% */
-  display: flex;
-  /* Affiche les points en ligne */
+  top: 50%; /* Centré verticalement */
+  left: 50%; /* Centré horizontalement */
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  display: flex; /* Aligne les points horizontalement */
   justify-content: center;
-  /* Centrage des points */
+  gap: 15px; /* Plus d'espacement entre les points */
 }
-/* Style des points de contrôle */
+
 .carousel-dots .dot {
-  border-radius: 50%;
-  /* Les points sont en forme de cercle */
-  margin: 5px;
-  /* Ajout d'un margin pour un meilleur contrôle */
+  width: 20px; /* Augmente la taille des points */
+  height: 20px; /* Taille proportionnelle */
+  background-color: grey; /* Couleur par défaut des points */
+  border-radius: 50%; /* Points circulaires */
+  border: 2px solid white; /* Bordure blanche pour améliorer la visibilité */
   cursor: pointer;
-  /* Curseur en forme de main pour un meilleur contrôle */
+  transition: transform 0.3s, background-color 0.3s, border 0.3s; /* Animation douce */
 }
-/* Styles pour les points de navigation du carrousel */
-.carousel-dots .active {
-  /* Border de 10px pour le point actif */
-  border: 10px solid green !important;
-  /* !important permet de surcharger les autres styles éventuels */
+
+.carousel-dots .dot:hover {
+  transform: scale(1.3); /* Agrandissement au survol */
+  background-color: lightgrey; /* Couleur plus claire au survol */
+  border: 2px solid #32cd32; /* Bordure verte au survol */
 }
-.carousel-dots .inactive {
-  /* Border de 10px pour les points inactifs */
-  border: 10px solid grey;
+
+.carousel-dots .dot.active {
+  background-color: #32cd32; /* Couleur verte pour le point actif */
+  border: 3px solid white; /* Bordure plus épaisse pour le point actif */
+  transform: scale(1.5); /* Le point actif est plus grand */
 }
 
 /************ Main ************/
@@ -114,33 +128,77 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: rgba(0, 128, 0, 0.635);
+  background: linear-gradient(
+    135deg,
+    #a8e063,
+    #56ab2f
+  ); /* Dégradé vert élégant */
+  height: 100%; /* Assure que le fond couvre toute la hauteur */
+  font-family: Arial, sans-serif; /* Optionnel : améliore la lisibilité du texte */
 }
 
 /*####### CLASS #####*/
 
 .logo {
-  width: 130px;
+  width: 130px; /* Taille du logo */
   height: auto;
-  margin-left: 50px;
-  margin-top: 10px;
+  position: absolute; /* Position absolue pour un centrage précis */
+  top: 10px; /* Distance du haut */
+  left: 50%; /* Positionnement horizontal */
+  transform: translateX(-50%); /* Centrage horizontal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre subtile */
+  z-index: 10; /* S'assure que le logo est au-dessus des autres éléments */
 }
 
 /*######## SECTION ######*/
 
 header {
   display: flex;
-  justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    li a {
-      color: white;
-      text-decoration: none;
-    }
-  }
+  flex-direction: row; /* Affiche les éléments en ligne */
+  justify-content: space-between; /* Logo centré et menu à droite */
+  align-items: center; /* Aligne verticalement le logo et le menu */
+  padding: 0 20px; /* Ajoute un espacement latéral */
+}
+
+.menu {
+  display: flex;
+  gap: 20px; /* Espacement entre les éléments */
+  list-style: none; /* Pas de puces */
+  background-color: white; /* Fond blanc pour le menu */
+  border: 2px solid #32cd32; /* Bordure verte subtile */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement interne pour aérer le contenu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour le mettre en avant */
+}
+
+.menu li a {
+  color: #32cd32; /* Texte vert */
+  text-decoration: none; /* Pas de soulignement */
+  font-weight: bold; /* Texte en gras */
+  transition: color 0.3s; /* Animation pour le survol */
+}
+
+.menu li a:hover {
+  color: #228b22; /* Vert plus foncé au survol */
+}
+
+/* Styles pour les feuilles */
+.leaf {
+  position: absolute;
+  width: 30px; /* Taille de la feuille */
+  height: 30px;
+  background-color: white; /* Couleur blanche pour la feuille */
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); /* Forme de feuille */
+  opacity: 0.8; /* Transparence pour un effet subtil */
 }
