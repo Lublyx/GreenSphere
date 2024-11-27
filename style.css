@@ -1,21 +1,19 @@
-/* Suppression des marges et des bords pour html et body */
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: rgba(0, 128, 0, 0.635);
-}
+/*******************  Caroussel (pas touche)******************/
+
 /* Définition d'un container pour gérer l'affichage */
 .container {
   overflow: hidden;
   /* Cache les éléments qui dépassent du container */
   border-style: solid;
   margin-bottom: 50px;
-  margin-top: 5px;
+  margin-top: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 /* Définition du carousel */
 .carousel {
   position: relative;
+
   /* Le carousel est positionné relativement à son parent */
 }
 /* Définition de l'élément contenant les diapositives */
@@ -108,9 +106,41 @@ body {
   border: 10px solid grey;
 }
 
+/************ Main ************/
+
+/*######## GLOBALE #######*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 128, 0, 0.635);
+}
+
+/*####### CLASS #####*/
+
 .logo {
   width: 130px;
   height: auto;
   margin-left: 50px;
   margin-top: 10px;
+}
+
+/*######## SECTION ######*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
