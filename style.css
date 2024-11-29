@@ -6,13 +6,15 @@
   /* Cache les éléments qui dépassent du container */
   border-style: solid;
   margin-bottom: 50px;
-  margin-top: 60px;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 /* Définition du carousel */
 .carousel {
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("img/watching-tv-1024x632.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 
   /* Le carousel est positionné relativement à son parent */
 }
@@ -128,11 +130,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    #a8e063,
-    #56ab2f
-  ); /* Dégradé vert élégant */
+  background-color: black;
   height: 100%; /* Assure que le fond couvre toute la hauteur */
   font-family: Arial, sans-serif; /* Optionnel : améliore la lisibilité du texte */
 }
