@@ -1,0 +1,190 @@
+<!--Section haute avant les films (navbar + menu)-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final_catalog_style.css">
+    <link rel="boxicons" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Green Sphere</title>
+</head>
+<!--un commentaire loooool imagine le mec trop mature là -->
+<body>
+    <!--et on remercie tous ISSAM pour le logo (non réellement le logo est beau)-->
+    <nav class="navbar">
+      <div class="logo_container">
+        <img src="img/Green_1.png" alt="logo" class="logo">
+    </div>
+    <!--aller je fais un vrai commentary tah doigby au GP explorer-->
+    <!--juste en dessous on a le menu de la navbar, j'ai pensé à faire un menu dropdown mais flemme heeinn-->
+    <div class="menu_container">
+        <ul class="menu">
+          <!--j'ai tenté un truc pour le lien-->
+            <li><a href="#caroussel" button onclick="window.location.href = 'caroussel'">Accueil</a></li>
+            <li><a href="#Catalogue">Catalogue</a></li>
+            <li><a href="#About">A propos</a></li>
+            <li><a href="#Support">Support</a></li>
+        </ul>
+    </div>
+    </nav>
+<!--main_page_lucas-->
+
+<section id="caroussel">
+  <!-- Conteneur principal pour le carrousel -->
+  <div class="container">
+    <!-- Élément carrousel -->
+    <div class="carousel">
+      <!-- Conteneur interne pour les diapositives -->
+      <div class="carousel-inner">
+        <!-- Première diapositive -->
+        <div class="slide">
+          <!-- Image de la première diapositive -->
+          <img src="https://fr.web.img2.acsta.net/pictures/17/10/12/10/09/5958933.jpg" alt="Géostorm">
+        </div>
+        <!-- Deuxième diapositive -->
+        <div class="slide">
+          <!-- Image de la deuxième diapositive -->
+          <img src="https://fr.web.img3.acsta.net/medias/nmedia/18/35/21/02/18373869.jpg" alt="Le jours d'après">
+        </div>
+        <!-- Troisième diapositive -->
+        <div class="slide">
+          <!-- Image de la troisième diapositive -->
+          <img
+            src="https://i0.wp.com/www.filmspourenfants.net/wp-content/uploads/2018/01/avant-le-deluge-a.jpg?fit=310%2C435&ssl=1"
+            alt="Avant le déluge">
+        </div>
+        <!-- Quatrième diapositive -->
+        <div class="slide">
+          <!-- Image de la quatrième diapositive -->
+          <img src="https://images-film-documentaire.fr/film/834/EC05172E404B48EE9FA52035912A6834.jpg"
+            alt="Une vérité qui dérange">
+        </div>
+        <!-- Cinquième diapositive -->
+        <div class="slide">
+          <!-- Image de la cinquième diapositive -->
+          <img
+            src="https://blogpeda.region-academique-nouvelle-aquitaine.fr/23-gueret-college-nadaud-svt/wp-content/uploads/sites/280/2017/05/demain.png"
+            alt="Demain">
+        </div>
+      </div>
+      <!-- Conteneur pour les boutons de navigation -->
+      <div class="carousel-controls">
+        <!-- Bouton pour passer à la diapositive précédente -->
+        <button id="prev">Précédent</button>
+        <!-- Bouton pour passer à la diapositive suivante -->
+        <button id="next">Suivant</button>
+      </div>
+      <!-- Conteneur pour les points de navigation -->
+      <div class="carousel-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!--mon catalogue chéri-->
+
+    <section class="section" id="home">
+        <div class="homepage_movies">
+            <div class="homepage_text">
+                <h1>Films à regarder seul ou en famille, sur smartphone comme sur pc !</h1>
+                <a href="#catalog" class="button">Visiter le catalogue</a>
+            </div>
+        </div>
+    </section>
+<!--espace avant catalogue pour pas que le passage de la section du début au catalogue soit trop brutale-->
+<h2 id="affiche">bite</h2>
+<!--Section catalogue-->
+<section id="catalog">
+    <div class="hoverGallery">
+  
+        <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=37994">
+        <img class="galleryImage" src="img/f1.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Geostorm (2017) | 1h49</div>
+      </div>
+      
+      
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=52009">
+        <img class="galleryImage" src="img/f2.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Le jour d'après (2004) | 2h</div>
+      </div>
+       
+        <div class="container">
+        <a href="https://www.youtube.com/watch?v=wbnqvCBxvg4&pp=ygUhYXZhbnQgbGUgZMOpbHVnZSBiYW5kZSBhbm5vbmNlIHZm">
+        <img class="galleryImage" src="img/f3.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Avant le déluge (2016) | 1h36</div>
+      </div>
+      
+       <div class="container">
+        <a href="https://www.youtube.com/watch?v=GoW3cQY-dW8&pp=ygUqVW5lIHbDqXJpdMOpIHF1aSBkw6lyYW5nZSBiYW5kZSBhbm5vbmNlIHZm">
+        <img class="galleryImage" src="img/f4.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Une vérité qui dérange (2006) | 1h36</div>
+      </div>
+      
+       <div class="container">
+        <a href="https://www.youtube.com/watch?v=BmTySqG7yf8&pp=ygUXZGVtYWluIGJhbmRlIGFubm9uY2UgdmY%3D">
+        <img class="galleryImage" src="img/f5.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Demain (2015) | 1h58</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=58486">
+        <img class="galleryImage" src="img/f6.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Vaïana 2 (2024) | 1h30</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=58159">
+        <img class="galleryImage" src="img/f8.jpeg" width="200" height="300" alt="" /> </a>
+         <div class="overlay">Mr Aznavour (2024) | 2h13</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=46891">
+        <img class="galleryImage" src="img/f13.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Le Comte de Monte-Cristo (2024) | 2h58</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=49696">
+        <img class="galleryImage" src="img/f9.jpeg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Alien : Romulus (2024) | 1h59</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=51673">
+        <img class="galleryImage" src="img/f10.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Beetlejuice Beetlejuice (2024) | 1h44</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=45164">
+        <img class="galleryImage" src="img/f11.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Vice-Versa 2 (2024) | 1h36</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=47976">
+        <img class="galleryImage" src="img/f12.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Deadpool & Wolverine (2024) | 2h07</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=58348">
+        <img class="galleryImage" src="img/f7.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Jeux Interdits (1952) | 1h25</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=53994">
+        <img class="galleryImage" src="img/f14.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Terrifier 3 (2024) | 2h05</div>
+      </div>
+    
+       <div class="container">
+        <a href="https://lecteurvideo.com/embed.php?id=15096">
+        <img class="galleryImage" src="img/f15.jpg" width="200" height="300" alt="" /> </a>
+        <div class="overlay">Mission Impossible Dead Reckoning pt.1 (2023) | 2h43</div>
+      </div>
+</section>
