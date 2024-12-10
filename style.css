@@ -65,10 +65,22 @@
 }
 
 #n2 {
-  background-image: url("https://img.freepik.com/photos-premium/planete-science-fiction-fond-ecran-generative-ai_138015-1678.jpg?semt=ais_hybrid");
+  background-image: url("https://imgsrc.cineserie.com/2004/05/88711.jpg?ver=1");
   &:nth-child(1),
   &:nth-child(2) {
-    background-image: url("https://img.freepik.com/photos-gratuite/fond-ecran-abstrait-nebuleuse-ultra-detaille-4_1562-749.jpg");
+    background-image: url("vidéo/LEJOURDAPRSTHEDAYAFTERTOMORROW2004Bande-annonceVOST-ezgif.com-crop.gif");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#n3 {
+  background-image: url("https://play-lh.googleusercontent.com/1entmfPsWFZH6TX2-kEXUySNgX680jVNWZzEhAWqd8k1UmxeCukOXglMsozUubk0Cvk");
+  &:nth-child(1),
+  &:nth-child(2) {
+    background-image: url("vidéo/Bande-annonce-AvantleDlugeBeforetheFloodofficialtrailer-ezgif.com-video-to-gif-converter.gif");
+    background-size: cover;
+    background-position: center;
   }
 }
 
