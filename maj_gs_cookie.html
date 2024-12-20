@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css_index1.css">
+  <title>Green Sphere</title>
+</head>
+<body>
+<div class="info-box">
+    <h2>Pour des raisons évidentes de sécurité liées aux activités exercées sur le réseau SandBox et les mesures prises par l'administration de l'IPI, nous fermons temporairement l'accès à notre catalogue et vous proposons en substitution un jeu type cookie clicker. </h2>
+    <span>Merci de votre compréhension,
+        L'équipe dev Green Sphere Streaming.
+    </span>
+</div>
+    <h1>Bienvenue dans Green Sphere Cliker</h1>
+    <h4>bite</h4>
+    <img id="cookie-image" src="logo.png" alt="Clique moi pour récolter un cookie!">
+    <p id="cookie-count">Cookies récoltés : 0</p>
+<script>
+    let cookies = 0;
+    const cookieImage = document.getElementById('cookie-image');
+    const cookieCount = document.getElementById('cookie-count');
+    function collectCookie() {
+        cookies++;
+        cookieCount.textContent = `Cookies récoltés : ${cookies}`;
+    }
+    cookieImage.addEventListener('click', collectCookie);
+</script>
+</body>
+</html>
